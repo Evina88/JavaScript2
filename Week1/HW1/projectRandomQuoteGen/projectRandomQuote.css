@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Calibri, sans-serif;
+    width: 100vw;
+    text-align:center;
+}
+h1 { 
+    text-align:center;
+    margin:20px 20px;
+}
+h2 {
+    margin: 10px 10px;
+}
+p { 
+    margin:10px 10px;
+    text-align: center;
+}
+ul{
+    text-align:left;
+}
+
+#quoteHolder{ 
+    width:60vw;
+   height:30vh;
+    color: rgb(128, 0, 128);
+    background-color: rgb(255, 255, 255);
+    line-height:2.5rem; 
+    border:50px solid rgb(128, 0, 128);
+    text-align:CENTER;
+    font-size:1.5rem;
+    font-weight:bold;
+    margin-left:25vh;
+    padding-top:2vh;   
+}
+button{
+  position:relative;
+  bottom:12vh; 
+  right:6vw;
+  background-color: rgb(236, 149, 236);
+  color:rgb(0, 0, 0); 
+  width:10vw;
+  height:5vh;
+  border-radius: 12px;  
+
+}
