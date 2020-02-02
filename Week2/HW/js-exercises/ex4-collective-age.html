@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex.4 Collective age</title>
+</head>
+<body>
+<script>
+const hackYourFutureMembers = [
+{ name: 'Wouter', age: 33 },
+{ name: 'Federico', age: 32 },
+{ name: 'Noer', age: 27 },
+{ name: 'Tjebbe', age: 22 },
+];
+
+//Write a program that calculates the combined age of every member
+//Make use of the map function to get the ages
+//It should contain a function that takes a callback
+//The callback adds all the ages together and returns the number
+//The main function should log the string " to the console, 
+//and afterwards return the number  
+let getAges = hackYourFutureMembers.map (ages => ages.age);
+console.log(getAges);
+
+   let ageSum = getAges.reduce(function add(total, age) {
+        return total + age;}, 0);
+  console.log("The collective age of the HYF team is: " + ageSum)  ;
+
+
+    </script>   
+   </body>
+   </html>
