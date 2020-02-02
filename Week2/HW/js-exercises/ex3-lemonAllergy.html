@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lemon Allergy</title>
+</head>
+<body>
+<script>
+const fruitBasket = ['Apple', 'Lemon', 'Grapefruit', 'Lemon', 'Banana', 'Watermelon', 'Lemon'];
+
+//Use the filter array function to take out the lemons
+let lemonLessArray = fruitBasket.filter(removeLemons);
+
+function removeLemons (fruits) {
+    return fruits !== "Lemon";   
+}
+console.log(lemonLessArray);
+
+//output a string that says: "My mom bought me a fruit basket, containing [array of fruits] !"
+for (let i = 0; i < lemonLessArray.Length; i++)
+lemonLessArray[i] = lemonLessArray[i].ToLower();
+
+console.log("My mom brought me a fruit basket, containing: " + lemonLessArray);
+</script>  
+</body>
+</html>

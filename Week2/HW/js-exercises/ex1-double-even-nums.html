@@ -1,0 +1,42 @@
+<!-- **Exercise 1: The odd ones out**
+
+function doubleEvenNumbers(numbers) {
+  const newNumbers = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      newNumbers.push(numbers[i] * 2);
+    }
+  }
+  return newNumbers;
+}
+
+const myNumbers = [1, 2, 3, 4];
+console.log(doubleEvenNumbers(myNumbers)); // Logs "[4, 8]" to the console
+
+The `doubleEvenNumbers` function returns only the even numbers in the array `myNumbers` and doubles them. 
+Like you've learned in the [README](README.md), this block of code isn't easy to decipher.
+Let's rewrite it.
+- Using the `map` and `filter` functions, rewrite the `doubleEvenNumbers` function. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex.1 The odd ones out</title>
+</head>
+<body>
+<script>
+    const myNumbers = [1, 2, 3, 4];
+
+    let evenNums = myNumbers.filter (num => num % 2 === 0);
+    console.log(evenNums);
+
+    let doubleEvenNums = evenNums.map (num => num*2);
+    console.log(doubleEvenNums);
+    
+</script> 
+</body>
+</html>
+
